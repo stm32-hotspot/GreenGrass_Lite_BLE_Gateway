@@ -1,0 +1,8 @@
+{
+    "TARGET_NAME": "insert-thing-name-or-group",
+    "BASE_BUCKET_NAME": "insert-desired-bucket-name",
+    "REGION": "insert-aws-region",
+    "VERSION": "1.0.0",
+    "COMPONENT_NAME": "com.example.BleGateway"
+  }
+  

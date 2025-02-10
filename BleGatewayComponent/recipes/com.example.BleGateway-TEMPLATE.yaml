@@ -1,0 +1,25 @@
+---
+RecipeFormatVersion: "2020-01-25"
+ComponentName: {{COMPONENT_NAME}}
+ComponentVersion: {{VERSION}}
+ComponentType: "aws.greengrass.generic"
+ComponentDescription: IoT BLE Gatway
+ComponentPublisher: STM
+# ComponentDependencies:
+#   aws.greengrass.TokenExchangeService:
+#     VersionRequirement: ">=0.0.0"
+#     DependencyType: "HARD"
+Manifests:
+  - Platform:
+      os: linux
+      runtime: "*"
+    Artifacts:
+      - URI: s3://{{BUCKET_NAME}}/{{COMPONENT_NAME}}/{{VERSION}}/BleGateway.py
+      - URI: s3://{{BUCKET_NAME}}/{{COMPONENT_NAME}}/{{VERSION}}/install.sh
+    Lifecycle:
+    #   Install:
+    #     Script: pip3 install -r {artifacts:path}/requirements.txt
+      run:
+        RequiresPrivilege: false
+        Script:
+          "bash {artifacts:path}/install.sh; python3  {artifacts:path}/BleGateway.py"

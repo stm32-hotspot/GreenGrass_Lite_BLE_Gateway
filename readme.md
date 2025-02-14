@@ -1,4 +1,4 @@
-# AWS IoT Greengrass BLE Sensor Gateway
+F# AWS IoT Greengrass BLE Sensor Gateway
 
 ## Introduction
 
@@ -214,8 +214,13 @@ To interact with AWS services from the terminal, you need to have the AWS CLI in
 
 ### **3. Register Your STM32MPU Board as an AWS IoT Greengrass Lite Device**
    
-   **[STM32MP13_AWS-IoT-Greengrass-nucleus-lite](https://github.com/stm32-hotspot/STM32MP13_AWS-IoT-Greengrass-nucleus-lite)**  
+   **[STM32MP1_AWS-IoT-Greengrass-nucleus-lite](https://github.com/stm32-hotspot/STM32MP1_AWS-IoT-Greengrass-nucleus-lite)**  
       A lightweight approach to setting up AWS IoT Greengrass on STM32MP1 devices.
+
+   or
+
+   **[STM32MP2_AWS-IoT-Greengrass-nucleus-lite](https://github.com/stm32-hotspot/STM32MP2_AWS-IoT-Greengrass-nucleus-lite)**  
+      A lightweight approach to setting up AWS IoT Greengrass on STM32MP2 devices.
 
 ### **4. Deploy the Component**
    The BLE Gateway Component is packaged as a Greengrass V2 Component and deployment is automated with **`deploy.sh`**. 
